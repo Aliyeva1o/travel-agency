@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="./assets/css/header.css">
+  <link rel="stylesheet" href="./assets/css/footer.css">
+  <link rel="stylesheet" href="./assets/css/homePage.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="icon" href="./assets/images/Layer 1.svg" type="image/icon type">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header class="header">
+        <img src="./assets/images/Layer 1.svg" alt="" class="logo_image">
+        <div class="menu_part">
+            <ul class="menu_ul">
+                <li><a href="./homePage.html">Home</a></li>
+                <li><a href="./aboutUs.html">About Us</a></li>
+                <li><a href="./tourPackages.html">Tour Packages</a></li>
+                <li><a href="./contactUs.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="register_part">
+            <select name="language" id="">
+                <option value="Eng" selected>Eng</option>
+                <option value="Az">Az</option>
+                <option value="Ru">Ru</option>
+            </select>
+            <p class="login"><a href="#">Login</a></p>
+            <button class="sign_up-button">Sign Up</button>
+        </div>
+        <i class="fa-solid fa-bars"></i>
+    </header>
+
+   <main class="main_search-side">
+    <p class="main_search-side-title"> Enjoy in the best way!</p>
+    <p class="main_search-side-thought">Enjoy our services for your trip anytime </p>
+  <div class="search_side-bar">
+    <div class="public_private-tour-name">
+        <button class="public_tour-button">Public Tours</button>
+        <button class="private_tour-button">Private Tours</button>
+    </div>
+    <div class="public_private-tours">
+        <div class="public_tour-card">
+            <h4><img src="./assets/images/Group-people.svg" alt=""> Number of people</h4>
+            <select name="" id="" class="number_select">
+                <option value="">Choose number</option>
+            </select>
+        </div>
+        <div class="public_tour-card">
+            <h4><img src="./assets/images/time-icn.svg" alt="">Time</h4>
+            <select name="" id="" class="time_select">
+                <option value="">Choose Time</option>
+            </select>
+        </div>
+        <div class="public_tour-card">
+            <h4><img src="./assets/images/tour-icn.svg" alt=""> Tour</h4>
+            <select name="" id="" class="tour_select">
+                <option value="">Select Tour</option>
+            </select>
+        </div>
+        <div class="public_tour-card">
+            <h4><img src="./assets/images/transport-icn.svg" alt="">Transportation</h4>
+            <select name="" id="" class="transport_select">
+                <option value="">Select Transportation</option>
+            </select>
+        </div>
+        <button class="search_button-tour"><img src="./assets/images/akar-icons_search.svg" alt=""></button>
+    </div>
+  </div>
+   </main>
+
+   <!-- Login register side -->
+
+   <div class="container">
+     <div class="register-box ">
+        <form action="#" class="create_account-form">
+            <p class="create_account-text">Create Account <img src="./assets/images/clarity_window-close-line.svg" alt="" class="close_icon"></p>
+            <label for="">Name and Surname</label>
+            <input type="text" placeholder="Enter your name and surname">
+            <label for="">Email Address</label>
+            <input type="email" placeholder="Enter your email address">
+            <label for="">Password</label>
+            <input type="password" placeholder="Enter your password">
+            <div class="terms_privacy-checkbox">
+                <input type="checkbox">
+                <label for=""> I agree with <a href="">Terms</a> and <a href="">Privacy</a></label>
+            </div>
+            <button class="form_sign-up-button">Sign Up</button>
+            <span>or</span>
+            <button class="sign_up-google"><img src="./assets/images/grommet-icons_google.svg" alt="" class="google_icon">Sign Up with Google</button>
+            <p class="login_link">Already have an account? <a href="#">Log In</a></p>
+        </form>
+     </div>
+
+     <div class="login_box">
+        <form action="" class="login_form">
+            <p class="login_text">Login<img src="./assets/images/clarity_window-close-line.svg" alt="" class="close_icon"></p>
+            <label for="">Email Address</label>
+            <input type="email" placeholder="Enter your email address">
+            <label for="">Password</label>
+            <input type="password" placeholder="Enter your password">
+            <a href="#" class="forgot_password">Forgot your password?</a>
+            <button class="form_sign-in-button">Sign In</button>
+            <span>or</span>
+            <button class="sign_in-google"><img src="./assets/images/grommet-icons_google.svg" alt="" class="google_icon">Sign In with Google</button>
+            <p class="signup_link">Dont have an account? <a href="#">Sign Up</a></p>
+        </form>
+     </div>
+
+     <div class="forgot_password-box">
+        <form action="" class="forgot_password-form">
+            <img src="./assets/images/Frame 76.svg" alt="" class="password_icon">
+            <p class="forgot_password-text">Forgot Password</p>
+            <p class="forgot_password-alert">No worries, we'll send you reset instructions.</p>
+            <label for="">Email Address</label>
+            <input type="email" placeholder="Enter your email address">
+            <button class="reset_password">Reset Password</button>
+            <a href="#" class="back_login"><img src="./assets/images/bi_arrow-right.svg" alt="">Back to Login</a>
+        </form>
+     </div>
+
+     <div class="new_password-box">
+        <form action="" class="new_password-form">
+            <img src="./assets/images/Frame 76.svg" alt="" class="password_icon">
+            <p class="new_password-text">Set New Password</p>
+            <p class="new_password-alert">Your new password must be different from previously used passwords.</p>
+            <label for="">New Password</label>
+            <input type="password" placeholder="Enter your password">
+            <label for="">Confirm Password</label>
+            <input type="password" placeholder="Enter your password">
+            <button class="set_password">Confirm Password</button>
+            <a href="" class="back_login"><img src="./assets/images/bi_arrow-right.svg" alt="">Back to Login</a>
+        </form>
+     </div>
+
+     <div class="reset_password-box">
+        <form action="" class="reset_password-form">
+            <img src="./assets/images/check.svg" alt="" class="check_icon">
+            <p class="reset_password-text">Password Reset</p>
+            <p class="reset_password-alert">Your password has been successfully reset. Click below to login in magically.</p>
+            <button class="continue_button">Continue</button>
+            <a href="" class="back_login"><img src="./assets/images/bi_arrow-right.svg" alt="">Back to Login</a>
+        </form>
+     </div>
+
+     <div class="check_email-box">
+        <form action="" class="check_email-form">
+            <img src="./assets/images/mail.svg" alt="" class="email_icon">
+            <p class="check_email-text">Ckeck your email</p>
+            <p class="check_email-alert">We sent a password reset link to loremipsum@gmail.com </p>
+            <button class="open_email">Open email app</button>
+            <p class="resend_link">Didnt receive the email ? <a href="">Click to resend</a></p>
+            <a href="" class="back_login"><img src="./assets/images/bi_arrow-right.svg" alt="">Back to Login</a>
+        </form>
+     </div>
+   </div>
+
+   <section class="home_page-slider">
+    <div class="homepage_slider-first-part">
+     <p>Explore Our Popular Destinantions</p>
+    </div>
+    <div class="homepage_slider-second-part">
+    
+    </div>
+    
+   </section>
+
+   <article class="article">
+    <img src="./assets/images/about picture.svg" alt="">
+    <div class="article_text">
+        <p class="first_text">WELCOME TO OUR SITE!</p>
+        <p class="second_text">We are the best company for your visit</p>
+        <p class="third_text">We are right in the center of Lucca to offer you the real city life! With years of experience in practically every tourism sector, with us you can find complete packages at the lowest price, to travel and learn and have fun all without worries and without stress. What are you waiting for, book a bright evening, a trip to beautiful Tuscany or a personal tour for you!</p>
+        <div class="calculations">
+            <p>20+ <span>Years Experience</span></p>
+            <p>100+ <span>Happy Customer</span></p>
+            <p>15+ <span>Choise of Services</span></p>
+            <p>10+ <span>Professional Guides</span></p>
+        </div>
+    </div>
+   </article>
+
+   <section class="section_contact-us">
+    <div class="contact_us-text-part">
+        <p class="contact_us-text-part-title">Get Special Offers for Organizations</p>
+        <p class="contact_us-text-part-information">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+        <button class="contact_us-button">Contact Us</button>
+    </div>
+    <img src="./assets/images/stock-photo-traveler-tourist-woman-in-casual-clothes-hat-camera-point-thumb-finger-back-aside-on-workspace-area-2063722232-removebg-preview 1.svg" alt="" class="section_contact-us-img">
+   </section>
+
+   <section class="home_page-section-services">
+    <div class="home_page-section-services-box">
+        <img src="./assets/images/Rectangle 20 (1)bycle.svg" alt="" class="service_img">
+        <p class="service_name">Bike and rickshaw rental </p>
+        <p class="service_information">Book your quality vehicle quickly for an hour or all day!</p>
+    </div>
+    <div class="home_page-section-services-box">
+        <img src="./assets/images/Rectangle 1999.svg" alt="" class="service_img">
+        <p class="service_name">Guided tour of the countryside </p>
+        <p class="service_information">Live the real Lucchese experience by visiting the suburbs by bike!</p>
+    </div>
+    <div class="home_page-section-services-box">
+        <img src="./assets/images/Rectangle 2000.svg" alt="" class="service_img">
+        <p class="service_name">Taxi and NCC service </p>
+        <p class="service_information">Do you need not only a bike but also a driver? Then you have found the right place!</p>
+    </div>
+    <div class="home_page-section-services-box">
+        <img src="./assets/images/Rectangle 20 (1)1.svg" alt="" class="service_img">
+        <p class="service_name">Bus Package </p>
+        <p class="service_information">Book your quality vehicle quickly for an hour or all day!</p>
+    </div>
+   </section>
+
+    <section class="book_bike">
+        <p class="title_book-now">Book Now Bike</p>
+        <div class="form_bike-photo">
+            <div class="form_bike">
+                <form action="">
+                    <div class="input_box">
+                        <label for="name">Name and Surname</label>
+                        <input type="text" placeholder="Enter your name and surname">
+                    </div>
+                    <div class="input_box">
+                        <label for="email">Email Address</label>
+                        <input type="email" placeholder="Enter your email address">
+                    </div>
+                    <div class="input_box">
+                        <label for="number">Telephone Number</label>
+                        <input type="number" placeholder=" Enter your telephone number">
+                    </div>
+                    <div class="select_box">
+                        <label for="service">Service Type</label>
+                    <select name="" id="">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                    </div>
+                    <div class="input_box">
+                        <label for="date">Date</label>
+                        <input placeholder="Select the date" type="date">
+                    </div>
+                    <div class="input_box">
+                        <label for="time">Time</label>
+                        <input type="time" placeholder="Select the time ">
+                    </div>
+                    <button class="book_now-button" type="submit">Book Now</button>
+                </form>
+            </div>
+            <img src="./assets/images/bike picture.svg" alt="" class="bike_photo">
+        </div>
+    </section>
+
+    <p class="popular_package-title">The Most Popular Packages </p>
+
+    <div class="popular_packages">
+
+        <div class="popular_package-box">
+            <img src="./assets/images/popul-pack.svg" alt="" class="popular_package-box-img">
+            <p class="popular_package-name">BIKE / RICKSHAW</p>
+            <p class="popular_package-price">10 €<span> / day</span></p>
+            <p class="popular_package-includes"><img src="./assets/images/calendar.svg" alt="" class="popular_package-includes-img">Your bike for a day</p>
+            <p class="popular_package-includes"><img src="./assets/images/city-app.svg" alt="" class="popular_package-includes-img"> City App</p>
+            <p class="popular_package-includes"><img src="./assets/images/discount.svg" alt="" class="popular_package-includes-img">Discount on Rickshaw</p>
+            <p class="popular_package-includes"><img src="./assets/images/icon_support.svg" alt="" class="popular_package-includes-img">Guaranteed Support</p>
+            <button class="popular_package-button">Book Now</button>
+        </div>
+        <div class="popular_package-box">
+            <img src="./assets/images/popul-pack2.svg" alt="" class="popular_package-box-img">
+            <p class="popular_package-name">BIKE TOURS </p>
+            <p class="popular_package-price">45 € <span>/ day</span></p>
+            <p class="popular_package-includes"><img src="./assets/images/mountain-bike.svg" alt="" class="popular_package-includes-img">A Mountain Bike Included </p>
+            <p class="popular_package-includes"><img src="./assets/images/guide-for.svg" alt="" class="popular_package-includes-img"> A Guide For You</p>
+            <p class="popular_package-includes"><img src="./assets/images/bottle.svg" alt="" class="popular_package-includes-img"> Bottle of water</p>
+            <p class="popular_package-includes"><img src="./assets/images/icon_support.svg" alt="" class="popular_package-includes-img"> Guaranteed Support</p>
+            <button class="popular_package-button">Book Now</button>
+        </div>
+        <div class="popular_package-box">
+            <img src="./assets/images/popul-pack3.svg" alt="" class="popular_package-box-img">
+            <p class="popular_package-name">BUS TRIPS</p>
+            <p class="popular_package-price">45 € <span>/ day</span></p>
+            <p class="popular_package-includes"><img src="./assets/images/ticket.svg" alt="" class="popular_package-includes-img">Park ticket</p>
+            <p class="popular_package-includes"><img src="./assets/images/bus.svg" alt="" class="popular_package-includes-img">Return bus</p>
+            <p class="popular_package-includes"><img src="./assets/images/companion.svg" alt="" class="popular_package-includes-img">Companion</p>
+            <p class="popular_package-includes"><img src="./assets/images/icon_support.svg" alt="" class="popular_package-includes-img">Guaranteed Support</p>
+            <button class="popular_package-button">Book Now</button>
+        </div>
+        <div class="popular_package-box">
+            <img src="./assets/images/popul-pack4.svg" alt="" class="popular_package-box-img">
+            <p class="popular_package-name">TRANSFER</p>
+            <p class="popular_package-price">10 € <span>/ day</span></p>
+            <p class="popular_package-includes"><img src="./assets/images/driver.svg" alt="" class="popular_package-includes-img">Personal Driver</p>
+            <p class="popular_package-includes"><img src="./assets/images/wherever.svg" alt="" class="popular_package-includes-img">Wherever You Want</p>
+            <p class="popular_package-includes"><img src="./assets/images/price.svg" alt="" class="popular_package-includes-img">At the best price</p>
+            <p class="popular_package-includes"><img src="./assets/images/icon_support.svg" alt="" class="popular_package-includes-img">Guaranteed Support</p>
+            <button class="popular_package-button">Book Now</button>
+        </div>
+
+    </div>
+
+    <section class="section_slider">
+        <div class="slider_first-part">
+         <p>Happy Customers Says</p>
+        </div>
+        <div class="slider_second-part">
+         <div class="customer_box">
+             <img src="./assets/images/Ellipse 4.svg" alt="" class="customer_img">
+             <p class="customer_name">Lyod Gomez</p>
+             <p class="customer_thoughts">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure</p>
+         </div>
+         <div class="customer_box">
+            <img src="./assets/images/Ellipse 4.svg" alt="" class="customer_img">
+            <p class="customer_name">Lyod Gomez</p>
+            <p class="customer_thoughts">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure</p>
+        </div>
+        <div class="customer_box">
+            <img src="./assets/images/Ellipse 4.svg" alt="" class="customer_img">
+            <p class="customer_name">Lyod Gomez</p>
+            <p class="customer_thoughts">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure</p>
+        </div>
+         <div class="customer_box">
+             <img src="./assets/images/Ellipse 4.svg" alt="" class="customer_img">
+             <p class="customer_name">Lyod Gomez</p>
+             <p class="customer_thoughts">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure</p>
+         </div>
+        </div>
+        
+     </section>
+
+     <footer class="footer">
+        <img src="./assets/images/Layer 1.svg" alt="" class="footer_logo">
+        <div class="footer_information">
+            <div class="services footer_detail">
+                <p>Services</p>
+                <ul>
+                    <li><a href="">Bike and Rickshaw rental</a></li>
+                    <li><a href="">>Guided Tours of Lucca</a></li>
+                    <li><a href="">>Guided Bike Tour of Lucca</a></li>
+                    <li><a href="">Trip In The Tuscan Hills</a></li>
+                    <li><a href="">Transportation With Luxury Cars</a></li>
+                    <li><a href="">Wine Tours By Bus With Guide</a></li>
+                </ul>
+            </div>
+            <div class="Home footer_detail">
+                <p>Home</p>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Tour Packages</a></li>
+                </ul>
+            </div>
+            <div class="Help footer_detail">
+                <p>Help</p>
+                <ul>
+                    <li><a href="">Terms of Use</a></li>
+                    <li><a href="">Provicy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="contacts footer_detail">
+                <p>Contacts</p>
+                <ul>
+                    <li><a href=""><img src="./assets/images/Vector (4).svg" alt="">Piazza Napoleone, Lucca, Tuscany</a></li>
+                    <li><a href=""><img src="./assets/images/Vector (2).svg" alt="">+39 346 368 5708</a></li>
+                    <li><a href=""><img src="./assets/images/Vector (3).svg" alt="">italiainlimo@gmail.com</a></li>
+                </ul>
+            </div>
+            <div class="footer_detail">
+                <p>Social Media</p>
+                <div class="media_logos">
+                    <img src="./assets/images/Vector (5).svg" alt="">
+                    <img src="./assets/images/Vector (6).svg" alt="">
+                    <img src="./assets/images/Subtract.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <p class="footer_text">Copyright © 2022. All rights reserved.</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./assets/javascript/main.js"></script>
+    <script src="./assets/javascript/slider.js"></script>
+</body>
+</html>
+

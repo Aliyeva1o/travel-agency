@@ -1,0 +1,783 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.register-box,.login_box,.forgot_password-box,.reset_password-box,.check_email-box,.new_password-box{
+  position: absolute;
+  top: 63%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+  background-color: rgb(255, 255, 255);
+  border-radius: 1.5rem;
+  box-shadow: 0rem 0.25rem 1.25rem 0rem rgba(255, 255, 255, 0.25);
+  display: none;
+}
+.login_box.active, .register-box.active,.forgot_password-box.active {
+  display: block;
+}
+.register-box .create_account-form,.login_box .login_form{
+  width: 27rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 2rem 3rem;
+  gap: 0.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0rem 0.25rem 1.25rem 0rem rgba(255, 255, 255, 0.25);
+}
+.forgot_password-box .forgot_password-form,.reset_password-box .reset_password-form,.check_email-box .check_email-form,.new_password-box .new_password-form{
+  width: 27rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 3rem;
+  gap: 0.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0rem 0.25rem 1.25rem 0rem rgba(255, 255, 255, 0.25);
+}
+.create_account-form .create_account-text,.login_form .login_text,.forgot_password-form .forgot_password-text,.reset_password-form .reset_password-text,.check_email-form .check_email-text,.new_password-form .new_password-text{
+  display: flex;
+  color: rgb(51, 51, 51);
+  font-family: Open Sans;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2.75rem;
+}
+.close_icon{
+  position: absolute;
+  right: 3rem;
+  cursor: pointer;
+}
+.create_account-form label , .login_form label , .forgot_password-form label,.new_password-form label{
+  color: rgb(51, 51, 51);
+  font-family: Open Sans;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.56rem;
+}
+.forgot_password-form label,.new_password-form label{
+  align-self: flex-start;
+}
+.create_account-form input , .login_form input,.forgot_password-form input,.new_password-form input{
+  border: 0.06rem solid rgba(51, 51, 51, 0.2);
+  border-radius: 0.5rem;
+  background: rgb(255, 255, 255);
+  padding: 0.88rem 1.5rem 0.88rem 1.5rem;
+  width: 100%;
+}
+.terms_privacy-checkbox input{
+  width: 1rem;
+}
+.terms_privacy-checkbox{
+  gap: 1rem;
+  margin-top: 0.8rem;
+  width: 100%;
+  display: flex;
+}
+.create_account-form a , .login_form a, .forgot_password-form a,.reset_password-form a,.check_email-form a,.new_password-form a{
+  text-decoration: none;
+}
+.create_account-form a{
+  color: rgb(255, 166, 0);
+}
+.create_account-form .form_sign-up-button , .login_form .form_sign-in-button , .forgot_password-form .reset_password , .reset_password-form .continue_button,.check_email-form .open_email,.new_password-form .set_password{
+  border-radius: 3.13rem;
+  background: rgb(250, 139, 2);
+  width: 100%;
+  height: 3rem;
+  border: none;
+  margin-top: 0.5rem;
+  color: rgb(255, 255, 255);
+  font-family: Open Sans;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.69rem;
+  cursor: pointer;
+}
+.forgot_password{
+  color: rgba(51, 51, 51, 0.6);
+  font-family: Open Sans;
+  font-size: 0.88rem;
+  font-weight: 400;
+  line-height: 1.19rem;
+  margin: 0.4rem 0rem 0rem 11rem;
+}
+.signup_link a,.resend_link a{
+  color: rgb(255, 166, 0);
+}
+.create_account-form span,.login_form span{
+  margin-left: 10rem;
+  color: rgb(51, 51, 51);
+  font-family: Open Sans;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.38rem;
+}
+.create_account-form .sign_up-google , .login_form .sign_in-google {
+  width: 100%;
+  height: 3rem;
+  box-sizing: border-box;
+  border: 0.06rem solid rgba(51, 51, 51, 0.2);
+  border-radius: 3.13rem;
+  color: rgb(51, 51, 51);
+  font-family: Open Sans;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.56rem;
+  opacity: 0.6;
+  display: flex;
+  align-items: center;
+  padding-left: 2.5rem;
+  gap: 2rem;
+  cursor: pointer;
+}
+.create_account-form .login_link , .login_form .signup_link {
+  font-family: Open Sans;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.38rem;
+  opacity: 0.7;
+  margin: 0.5rem 0rem 0rem 2.5rem;
+}
+.forgot_password-alert, .back_login, .reset_password-alert,.check_email-alert,.new_password-alert{
+  text-align: center;
+  color:rgb(51, 51, 51);
+  margin-top: 0.7rem;
+  display: flex;
+  gap: 0.4rem;
+  font-family: open Sans;
+  font-size: 0.9rem;
+}
+.main_search-side{
+  background-image: url(../images/julia-solonina-Csja8O0sbOw-unsplash\ 1\ \(1\).svg);
+  height: 55rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 1.25rem 11.43rem 1.25rem 11.43rem;
+}
+
+.header{
+  position: absolute;
+  background-color: rgb(184, 184, 184,0.4);
+  border-bottom: 1px solid gray;
+}
+.menu_part li, .register_part p{
+  color: aliceblue;
+}
+.main_search-side-title{
+  margin-top:16rem;
+  color: rgb(255, 255, 255);
+  font-family: lobster;
+  font-size: 3.2rem;
+  font-weight: 400;
+  line-height: 4.56rem;
+}
+.main_search-side .search_side-bar{
+  width: 100%;
+  height: 14rem;
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.2);
+}
+.main_search-side-thought{
+  color: rgb(255, 255, 255);
+  font-family: Open Sans;
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 2.06rem;
+}
+.public_private-tour-name{
+  height: 3.56rem;
+  margin-top: 2rem;
+  display: flex;
+}
+.public_tour-button,.private_tour-button{
+  width: 10rem;
+  border: none;
+  font-family: Open Sans;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.56rem;
+  cursor: pointer;
+}
+.public_tour-button{
+  border-radius: 0.75rem 0rem 0rem 0rem;
+  background: rgb(255, 255, 255);
+  color: orange;
+}
+.private_tour-button{
+  border-radius: 0rem 0.75rem 0rem 0rem;
+  background: rgba(255, 255, 255, 0.4);
+}
+.public_private-tours{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 7rem;
+  background-color: white;
+  padding: 0rem 1rem;
+  font-family: open sans;
+  border-radius: 0rem 0.75rem 0.75rem 0.75rem;
+}
+.public_tour-card{
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  border-right: 1px solid gray;
+  padding: 0rem 2.5rem;
+}
+.public_tour-card select{
+  outline: none;
+}
+.search_button-tour{
+  margin-left: 2rem;
+  width: 4rem;
+  height: 4rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: orange;
+  cursor: pointer;
+}
+.public_tour-card select{
+  border: none;
+  height: 2rem;
+  font-size: 1rem;
+}
+.public_tour-card h4{
+  display: flex;
+  gap: 0.5rem;
+}
+.home_page-slider{
+  position: relative;
+  margin: 5rem 0rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem 11.43rem 1.25rem 11.43rem;
+  gap: 3rem;
+}
+.homepage_slider-first-part p{
+  color: rgb(51, 51, 51);
+  font-family: Open Sans;
+  font-size: 1.8rem;
+  font-weight: 800;
+  line-height: 2.75rem;
+  text-align: center;
+}
+.homepage_slider-second-part{
+  /* display: flex;
+  flex-wrap: wrap; */
+  /* gap: 2.4rem; */
+  padding: 5rem 0rem 0rem 0rem;
+}
+.left_arrow{
+  position: absolute;
+  right: 3.8rem;
+  top: 0rem;
+  bottom: 5rem;
+  z-index: 1;
+}
+.right_arrow{
+  position: absolute;
+  top: 0rem;
+  right: 0.4rem;
+}
+.slider_tour-package{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 35rem;
+  padding: 0rem 1rem;
+}
+.tour_package-img{
+  width: 16rem;
+  margin: 0rem auto;
+}
+.tour_package-name{
+  color: rgb(51, 51, 51);
+  font-family: Open Sans;
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 2.06rem;
+}
+.tour_package-price{
+  font-family: open Sans;
+}
+.tour_package-price span{
+  color: rgb(250, 139, 2);
+  font-family: Open Sans;
+  font-size: 1.3rem;
+  font-weight: 800;
+  line-height: 2.06rem;
+  margin-left: 0.5rem;
+}
+.tour_package-date-person{
+  display: flex;
+  justify-content: space-between;
+}
+.tour_package-date , .tour_package-person{
+  display: flex;
+  color: rgb(250, 139, 2);
+  font-family: Open Sans;
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1.38rem;
+  gap: 0.5rem;
+}
+.tour_package-information{
+  color: rgb(51, 51, 51);
+  font-family: Open Sans;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.63rem;
+}
+.read_more{
+  cursor: pointer;
+  display: flex;
+  color: rgb(250, 139, 2);
+  font-family: Open Sans;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.56rem;
+  gap: 0.7rem;
+}
+.article{
+  margin-top: 1rem;
+  padding: 1.25rem 11.43rem 1.25rem 11.43rem;
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+}
+.article img{
+  width: 30.5rem;
+  height: 33.25rem;
+}
+.article_text{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.first_text{
+  color: rgb(51, 51, 51);
+  font-family: Open Sans;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.38rem;
+}
+.second_text{
+  color: rgb(51, 51, 51);
+  font-family: Open Sans;
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 2.75rem;
+}
+.third_text{
+  color: rgb(51, 51, 51);
+  font-family: Open Sans;
+  font-size: 1.13rem;
+  font-weight: 400;
+  line-height: 2rem;
+}
+.calculations{
+  display: flex;
+  gap: 3rem;
+}
+.calculations p{
+  color: rgb(250, 139, 2);
+font-family: Open Sans;
+font-size: 2rem;
+font-weight: 700;
+line-height: 2rem;
+}
+.calculations span{
+  margin-top: 0.5rem;
+  color: rgb(51, 51, 51);
+  font-family: Open Sans;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.63rem;
+  display: block;
+  width: 5rem;
+  opacity: 0.6;
+}
+.section_contact-us{
+  margin-top: 7rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 2.25rem 11.43rem 1.25rem 11.43rem;
+  height: 25rem;
+  background-image: url(../images/Rectangle\ 51.svg);
+}
+.contact_us-text-part{
+  text-align: center;
+  padding: 2.3rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 35.56rem;
+  height: 20.63rem;
+  gap: 1.3rem;
+  border-radius: 1.5rem;
+  background: rgba(255, 255, 255, 0.3);
+}
+.contact_us-text-part-title{
+  color: rgb(51, 51, 51);
+  font-family: Open Sans;
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 2.75rem;
+}
+.contact_us-text-part-information{
+  color: rgb(0, 0, 0);
+  font-family: Open Sans;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.63rem;
+}
+.contact_us-button{
+  border: none;
+  cursor: pointer;
+  border-radius: 3.13rem;
+  background: rgb(250, 139, 2);
+  width: 13.25rem;
+  height: 2.94rem;
+  color: rgb(255, 255, 255);
+  font-family: Open Sans;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.63rem;
+}
+.section_contact-us-img{
+  position: relative;
+  bottom: 7.5rem;
+  width: 20.69rem;
+  height: 31.5rem;
+}
+.home_page-section-services{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 6.25rem 11.43rem 3.25rem 11.43rem;
+}
+.home_page-section-services-box .service_img{
+  width: 16rem;
+}
+.home_page-section-services-box{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 16rem;
+  height: 25rem;
+}
+.service_name{
+  color: rgb(51, 51, 51);
+  font-family: Open Sans;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 2.06rem;
+}
+.service_information{
+  color: rgb(51, 51, 51);
+  font-family: Open Sans;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.63rem;
+}
+.book_bike{
+  padding: 1.25rem 11.43rem 0rem 11.43rem;
+  height: 31.5rem;
+  width: 100%;
+  background-image: url(../images/bg\ \(1\).svg);
+}
+.title_book-now{
+  color: rgb(51, 51, 51);
+  font-family: Open Sans;
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 2.75rem;
+  margin: 1rem auto;
+}
+.form_bike-photo{
+  display: flex;
+  justify-content: space-between;
+}
+.bike_photo{
+  width: 35.25rem;
+}
+.form_bike form{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 35.88rem;
+  height: 23rem;
+  border-radius: 1.5rem;
+  background: rgba(255, 255, 255, 0.3);
+}
+.form_bike-photo input , .form_bike-photo select{
+  width: 14.88rem;
+  height: 3.13rem;
+  border-radius: 0.5rem;
+  background: rgb(255, 255, 255);
+  border: none;
+  padding: 0rem 1rem;
+}
+.input_box , .select_box{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: rgb(51, 51, 51);
+  font-family: Open Sans;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.56rem;
+}
+.form_bike form button{
+  padding: 0.73rem 3.5rem 0.73rem 3.5rem;
+  border: none;
+  border-radius: 3.13rem;
+  background: rgb(250, 139, 2);
+  color: rgb(255, 255, 255);
+  font-family: Open Sans;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.69rem;
+}
+
+.popular_package-title{
+  margin-top: 7rem;
+  margin-left: 11.43rem;
+  color: rgb(51, 51, 51);
+  font-family: Open Sans;
+  font-size: 1.8rem;
+  font-weight: 800;
+  line-height: 2.75rem;
+}
+.popular_package-name{
+  color: rgb(51, 51, 51);
+  font-family: Open Sans;
+  font-size: 1.1rem;
+  font-weight: 800;
+  line-height: 1.69rem;
+  margin-left: 1.1rem;
+}
+.popular_package-price{
+  margin-left: 1.1rem;
+  color: rgb(250, 139, 2);
+  font-family: Open Sans;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 4.06rem;
+}
+.popular_package-price span{
+  color: rgb(51, 51, 51);
+  font-family: Open Sans;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.56rem;
+}
+.popular_package-includes{
+  display: flex;
+  gap: 0.5rem;
+  color: rgb(51, 51, 51);
+  font-family: Open Sans;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.56rem;
+  margin-left: 1.1rem;
+}
+.popular_package-box-img{
+  width: 17rem;
+}
+.popular_packages{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 4.25rem 11.43rem 2rem 11.43rem;
+}
+.popular_package-box{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 0.8rem;
+  border-radius: 1.5rem;
+  border: 0.1px solid rgb(226, 226, 226);
+}
+.popular_package-button{
+  width: 14.7rem;
+  height: 3.19rem;
+  border: 0.06rem solid rgb(250, 139, 2);
+  border-radius: 3.13rem;
+  background-color: transparent;
+  color: rgb(250, 139, 2);
+  font-family: Open Sans;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.69rem;
+  cursor: pointer;
+  margin-left: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.section_slider{
+  margin: 5rem 0rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem 11.43rem 1.25rem 11.43rem;
+  gap: 5rem;
+}
+.slider_first-part ,.slider_second-part{
+  gap: 7rem;
+}
+.left_arrow{
+  background-color: rgb(212, 212, 212);
+  border-radius: 50%;
+}
+.slider_first-part p{
+  color: rgb(51, 51, 51);
+  font-family: Open Sans;
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 2.75rem;
+  text-align: center;
+}
+.slider_second-part{
+  padding: 5rem 0rem;
+}
+.customer_box{
+  border: 0.06rem solid rgb(239, 239, 239);
+  border-radius: 1.5rem;
+  width: 28.75rem;
+  height: 18.38rem;
+  gap: 0.7rem;
+  text-align: center;
+  padding: 2rem;
+  margin: 1rem;
+}
+.customer_box .customer_img{
+  margin: 1rem auto;
+}
+.customer_name, .customer_thoughts{
+  color: rgb(51, 51, 51);
+  font-family: Open Sans;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.56rem;
+}
+.register_part select{
+  background-color: transparent;
+  color: azure;
+}
+.none{
+  display: none;
+}
+.header i{
+  color: white;
+  display: none;
+}
+@media screen and (max-width:992px){
+  .public_private-tours{
+    padding: 0 16px;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .search_button-tour{
+    margin: 0rem;
+  }
+  .slider_icons{
+    display: flex;
+    align-items: center;
+  }
+  .article{
+    flex-direction: column;
+  }
+  .article_text{
+    align-items: center;
+    text-align: center;
+  }
+  .section_contact-us img{
+    display: none;
+  }
+  .book_bike img{
+    display: none;
+  }
+  .popular_packages{
+    gap: 3rem;
+  }
+  .slider_second-part{
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .public_tour-card{
+    padding: 0.2rem;
+  }
+  .public_private-tours{
+    padding: 0.5rem;
+  }
+  .main_search-side{
+    padding: 0rem;
+  }
+  .search_side-bar{
+    height: 20rem;
+  }
+  .public_private-tours{
+    height: 10rem;
+  }
+  .calculations{
+    gap: 1rem;
+    padding: 0rem;
+    margin: 0rem;
+  }
+}
+@media screen and (max-width:576px){
+  .main_search-side,.home_page-slider,.article,.section_contact-us,.home_page-section-services,.book_bike,.popular_packages{
+    padding: 0rem 2rem;
+  }
+  .homepage_slider-second-part,.home_page-section-services{
+    justify-content: center;
+  }
+  .section_contact-us,.home_page-section-services{
+    padding-top: 2rem;
+  }
+  .book_bike form{
+    width: 28rem;
+    height: 40rem;
+    flex-direction: column;
+  }
+  .book_bike{
+    display: flex;
+    flex-direction: column;
+    height: 50rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .title_book-now{
+    margin: 2rem 0rem;
+  }
+  .book_bike .input_box,.book_bike .select_box{
+    align-items: center;
+  }
+  .popular_packages{
+    justify-content: center;
+  }
+  .popular_package-title{
+    margin: 2rem 4.5rem;
+  }
+  .section_slider{
+    padding: 0.5rem;
+  }
+  .search_side-bar{
+    height: 30rem;
+  }
+  .public_private-tours{
+    height: 18rem;
+  }
+  .slider_tour-package{
+    background-color: aquamarine;
+    width: 20rem;
+  }
+  .tour_package-date-person{
+    justify-content: space-around;
+  }
+}

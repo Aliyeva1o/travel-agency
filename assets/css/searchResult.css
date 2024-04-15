@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.book_now{
+    border-radius: 3.13rem;
+    background: rgb(250, 139, 2);
+    width: 9.5rem;
+    height: 2.94rem;
+    border: none;
+    color: aliceblue;
+    font-weight: 600;
+    line-height: 1.69rem;
+    cursor: pointer;
+}
+.main{
+    padding: 1.25rem 11.43rem 1.25rem 11.43rem;
+}
+.search_results{
+    color: rgb(51, 51, 51);
+    font-family: Open Sans;
+    font-size: 1.6rem;
+    font-weight: 800;
+    line-height: 2.75rem;
+    margin: 2rem 0rem;
+}
+.tour_information{
+    width: 66.44rem;
+}
+.tour_photo-information{
+    display: flex;
+    padding: 2rem 0rem;
+    border-bottom: 1px solid rgb(200, 198, 198);
+}
+.tour_information-details{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.price_book{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+}
+.price{
+    color: rgb(51, 51, 51);
+    font-family: Open Sans;
+}
+.price b{
+    font-size: 1.5rem;
+}
+.detail{
+    display: flex;
+    color: rgb(51, 51, 51);
+    font-family: Open Sans;
+    font-weight: 700;
+    padding: 0.6rem;
+}
+.tour_name{
+    color: rgb(51, 51, 51);
+    font-family: Open Sans;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin: 1.5rem;
+}
+.detail img{
+    margin-right: 1rem;
+}
+.detail span{
+    margin-left: 0.5rem;
+    font-weight: 400;
+}
+.view_tour{
+    width: 9.5rem;
+    height: 2.94rem;
+    border: 0.06rem solid rgb(250, 139, 2);
+    color: rgb(250, 139, 2);
+    font-family: Open Sans;
+    border-radius: 3.13rem;
+    font-weight: 600;
+    line-height: 1.69rem;
+    background-color: transparent;
+}
+.header i{
+    display: none;
+}
+.menu_part li a{
+    color: black;
+}
+@media screen and (max-width: 992px) {
+    .header .fa-bars{
+        display: block;
+        color: rgb(46, 46, 46);
+    }
+    .main{
+        padding: 5rem;
+    }
+    .price_book{
+        gap: 1.5rem;
+        align-items:center;
+    }
+    .tour_photo-information{
+        flex-wrap: wrap;
+    }
+}

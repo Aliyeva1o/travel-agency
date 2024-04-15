@@ -1,0 +1,20 @@
+<svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip201_5111">
+			<rect id="system-uicons:calendar-month" width="24.000000" height="24.000000" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="system-uicons:calendar-month" width="24.000000" height="24.000000" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip201_5111)">
+		<path id="Vector" d="M18.85 2.85C19.46 2.85 20.04 3.09 20.47 3.52C20.9 3.95 21.14 4.53 21.14 5.14L21.14 18.85C21.14 19.46 20.9 20.04 20.47 20.47C20.04 20.9 19.46 21.14 18.85 21.14L5.14 21.14C4.53 21.14 3.95 20.9 3.52 20.47C3.09 20.04 2.85 19.46 2.85 18.85L2.85 5.14C2.85 4.53 3.09 3.95 3.52 3.52C3.95 3.09 4.53 2.85 5.14 2.85L18.85 2.85ZM2.85 7.42L21.14 7.42" stroke="#FA8B02" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round"/>
+		<path id="Vector" d="M13.14 12C13.14 12.63 12.63 13.14 12 13.14C11.36 13.14 10.85 12.63 10.85 12C10.85 11.36 11.36 10.85 12 10.85C12.63 10.85 13.14 11.36 13.14 12Z" fill="#FA8B02" fill-opacity="1.000000" fill-rule="evenodd"/>
+		<path id="Vector" d="M8.57 12C8.57 12.63 8.06 13.14 7.42 13.14C6.79 13.14 6.28 12.63 6.28 12C6.28 11.36 6.79 10.85 7.42 10.85C8.06 10.85 8.57 11.36 8.57 12Z" fill="#FA8B02" fill-opacity="1.000000" fill-rule="evenodd"/>
+		<path id="Vector" d="M17.71 12C17.71 12.63 17.2 13.14 16.57 13.14C15.94 13.14 15.42 12.63 15.42 12C15.42 11.36 15.94 10.85 16.57 10.85C17.2 10.85 17.71 11.36 17.71 12Z" fill="#FA8B02" fill-opacity="1.000000" fill-rule="evenodd"/>
+		<path id="Vector" d="M13.14 16.57C13.14 17.2 12.63 17.71 12 17.71C11.36 17.71 10.85 17.2 10.85 16.57C10.85 15.94 11.36 15.42 12 15.42C12.63 15.42 13.14 15.94 13.14 16.57Z" fill="#FA8B02" fill-opacity="1.000000" fill-rule="evenodd"/>
+		<path id="Vector" d="M8.57 16.57C8.57 17.2 8.06 17.71 7.42 17.71C6.79 17.71 6.28 17.2 6.28 16.57C6.28 15.94 6.79 15.42 7.42 15.42C8.06 15.42 8.57 15.94 8.57 16.57Z" fill="#FA8B02" fill-opacity="1.000000" fill-rule="evenodd"/>
+		<path id="Vector" d="M17.71 16.57C17.71 17.2 17.2 17.71 16.57 17.71C15.94 17.71 15.42 17.2 15.42 16.57C15.42 15.94 15.94 15.42 16.57 15.42C17.2 15.42 17.71 15.94 17.71 16.57Z" fill="#FA8B02" fill-opacity="1.000000" fill-rule="evenodd"/>
+	</g>
+</svg>

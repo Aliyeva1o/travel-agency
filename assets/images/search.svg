@@ -1,0 +1,15 @@
+<svg width="80.000000" height="80.000000" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip201_29546">
+			<rect id="akar-icons:search" width="32.000000" height="32.000000" transform="translate(23.500000 24.000000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="search" rx="12.000000" width="80.000000" height="80.000000" transform="translate(-0.500000 0.000000)" fill="#FA8B02" fill-opacity="1.000000"/>
+	<rect id="akar-icons:search" width="32.000000" height="32.000000" transform="translate(23.500000 24.000000)" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip201_29546)">
+		<path id="Vector" d="M51.5 52L45.51 46M45.51 46.01C43.38 48.13 40.5 49.33 37.5 49.33C34.49 49.33 31.61 48.13 29.48 46.01C27.36 43.88 26.16 41 26.16 38C26.16 34.99 27.36 32.11 29.48 29.98C31.61 27.86 34.49 26.66 37.5 26.66C40.5 26.66 43.38 27.86 45.51 29.98C47.63 32.11 48.83 34.99 48.83 38C48.83 41 47.63 43.88 45.51 46.01Z" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linecap="round"/>
+	</g>
+</svg>

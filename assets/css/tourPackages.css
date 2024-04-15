@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header i{
+    display: none;
+}
+.main_tour-packages , .section_services{
+    padding: 1.25rem 11.43rem 1.25rem 11.43rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.4rem;
+}
+.title_tour-packages , .title_services{
+    margin: 5.25rem 11.43rem 1.25rem 11.43rem;
+    color: rgb(51, 51, 51);
+    font-family: Open Sans;
+    font-size: 1.6rem;
+    font-weight: 800;
+    line-height: 2.75rem;
+}
+.tour_package{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    width: 16rem;
+    height: 35rem;
+}
+.tour_package-img{
+    width: 16rem;
+}
+.header a{
+    color: black;
+}
+.tour_package-name{
+    color: rgb(51, 51, 51);
+    font-family: Open Sans;
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 2.06rem;
+}
+.tour_package-price{
+    font-family: open Sans;
+}
+.tour_package-price span{
+    color: rgb(250, 139, 2);
+    font-family: Open Sans;
+    font-size: 1.3rem;
+    font-weight: 800;
+    line-height: 2.06rem;
+    margin-left: 0.5rem;
+}
+.tour_package-date-person{
+    display: flex;
+    justify-content: space-between;
+}
+.tour_package-date , .tour_package-person{
+    display: flex;
+    color: rgb(250, 139, 2);
+    font-family: Open Sans;
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 1.38rem;
+    gap: 0.5rem;
+}
+.tour_package-information{
+    color: rgb(51, 51, 51);
+    font-family: Open Sans;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.63rem;
+}
+.read_more{
+    display: flex;
+    color: rgb(250, 139, 2);
+    font-family: Open Sans;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.56rem;
+    gap: 0.7rem;
+}
+.service_img{
+    width: 22rem;
+}
+.section_services-box{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 22rem;
+    height: 28rem;
+}
+.service_name{
+    color: rgb(51, 51, 51);
+    font-family: Open Sans;
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 2.06rem;
+}
+.service_information{
+    color: rgb(51, 51, 51);
+    font-family: Open Sans;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.63rem;
+}
+.book_bike{
+    padding: 1.25rem 11.43rem 0rem 11.43rem;
+    height: 31.5rem;
+    width: 100%;
+    background-image: url(../images/bg\ \(1\).svg);
+}
+.title_book-now{
+    color: rgb(51, 51, 51);
+    font-family: Open Sans;
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 2.75rem;
+    margin: 1rem 12.5rem;
+}
+.form_bike-photo{
+    display: flex;
+    justify-content: space-between;
+}
+.bike_photo{
+    width: 35.25rem;
+}
+.form_bike form{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 35.88rem;
+    height: 23rem;
+    border-radius: 1.5rem;
+    background: rgba(255, 255, 255, 0.3);
+}
+.form_bike-photo input , .form_bike-photo select{
+    width: 14.88rem;
+    height: 3.13rem;
+    border-radius: 0.5rem;
+    background: rgb(255, 255, 255);
+    border: none;
+    padding: 0rem 1rem;
+}
+.input_box , .select_box{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: rgb(51, 51, 51);
+    font-family: Open Sans;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.56rem;
+}
+.form_bike form button{
+    padding: 0.73rem 2.5rem 0.73rem 2.5rem;
+    border: none;
+    border-radius: 3.13rem;
+    background: rgb(250, 139, 2);
+    color: rgb(255, 255, 255);
+    font-family: Open Sans;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.69rem;
+}
+.section_slider{
+    margin: 5rem 0rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1.25rem 11.43rem 1.25rem 11.43rem;
+    gap: 5rem;
+}
+.slider_first-part ,.slider_second-part{
+    gap: 7rem;
+}
+.slider_second-part{
+    padding: 5rem 0rem;
+}
+.left_arrow{
+    background-color: rgb(212, 212, 212);
+    border-radius: 50%;
+    position: absolute;
+    right: 3.8rem;
+    top: 0rem;
+    bottom: 5rem;
+    z-index: 1;
+}
+.right_arrow{
+    position: absolute;
+    top: 0rem;
+    right: 0.4rem;
+}
+.slider_first-part p{
+    color: rgb(51, 51, 51);
+    font-family: Open Sans;
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 2.75rem;
+    text-align: center;
+}
+.customer_box{
+    border: 0.06rem solid rgb(239, 239, 239);
+    border-radius: 1.5rem;
+    width: 28.75rem;
+    height: 18.38rem;
+    gap: 0.7rem;
+    text-align: center;
+    padding: 2rem;
+    margin: 1rem;
+}
+.customer_box .customer_img{
+    margin: 1rem auto;
+}
+.customer_name, .customer_thoughts{
+    color: rgb(51, 51, 51);
+    font-family: Open Sans;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.56rem;
+}
+@media screen and (max-width: 992px){
+    .header .fa-bar{
+        color: black;
+    }
+    .section_services{
+        padding: 5rem;
+    }
+    .book_bike img{
+        display: none;
+    }
+    .section_slider{
+        padding: 3rem;
+    }
+    .customer_box{
+        width: 26rem;
+        padding: 2rem;
+        height: 23rem;
+    }
+}
+@media screen and (max-width: 576px){
+    .book_bike form{
+        width: 28rem;
+        height: 40rem;
+        flex-direction: column;
+      }
+      .book_bike{
+        display: flex;
+        flex-direction: column;
+        height: 54rem;
+        justify-content: center;
+        align-items: center;
+      }
+      .title_book-now{
+        margin: 2rem 0rem;
+      }
+      .book_bike .input_box,.book_bike .select_box{
+        align-items: center;
+      }
+      .section_slider{
+        padding: 0.5rem;
+      }
+      .section_slider .slider_second-part{
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+      }
+      .main_tour-packages{
+        justify-content: center;
+      }
+      .title_tour-packages{
+        margin: 1rem 8rem;
+      }
+}

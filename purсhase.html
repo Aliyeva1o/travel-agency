@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase</title>
+    <link rel="stylesheet" href="./assets/css/header.css">
+  <link rel="stylesheet" href="./assets/css/purchase.css">
+  <link rel="icon" href="./assets/images/Layer 1.svg" type="image/icon type">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <img src="./assets/images/Layer 1.svg" alt="" class="logo_image">
+        <div class="menu_part">
+            <ul>
+                <li><a href="./homePage.html">Home</a></li>
+                <li><a href="./aboutUs.html">About Us</a></li>
+                <li><a href="./tourPackages.html">Tour Packages</a></li>
+                <li><a href="./contactUs.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="register_part">
+            <select name="language" id="">
+                <option value="Eng" selected>Eng</option>
+                <option value="Az">Az</option>
+                <option value="Ru">Ru</option>
+            </select>
+            <p class="login"><a href="">Login</a></p>
+            <button class="sign_up-button">Sign Up</button>
+        </div>
+        <i class="fa-solid fa-bars"></i>
+    </header>
+    <div class="progress_bar">
+        <div class="progress" id="progress"></div>
+        <div class="progress_step active" data_title="Booking Details"><span>1</span></div>
+        <div class="progress_step" data_title="Your Details"><span>2</span></div>
+        <div class="progress_step" data_title="Payment"><span>3</span></div>
+    </div>
+    <main class="form_overview">
+        <div class="buy_ticket-form">
+            <form action="" class="buy_ticket-form">
+                <label for="">When you will visit?</label>
+                <input type="date">
+                <label for="">Which time?</label>
+                <input type="time">
+                <label for="">Select Your Tickets </label>
+                <ul>
+                    <li>Free for kids under 6 and disabled visitors (74%+)</li>
+                    <li>Pregnant women, families with strollers, and visitors on crutches can buy priority tickets at the venue</li>
+                </ul>
+                <div class="ticket_box">
+                    <div class="people_group-price">
+                        <p class="people_group-text">Adult (18+)</p>
+                        <p class="price"> €34.00 </p>
+                    </div>
+                    <div class="increment_decrement-box">
+                        <span class="minus">-</span>
+                        <span class="num">0</span>
+                        <span class="plus">+</span>
+                    </div>
+                </div>
+                <div class="ticket_box">
+                    <div class="people_group-price">
+                        <p class="people_group-text">Child (6-17)</p>
+                        <li> With valid ID</li>
+                        <li>Only in combination with: Adult (18+)</li>
+                        <p class="price"> €22.00 </p>
+                    </div>
+                    <div class="increment_decrement-box">
+                        <span class="minus">-</span>
+                        <span class="num">0</span>
+                        <span class="plus">+</span>
+                    </div>
+                </div>
+                <div class="ticket_box">
+                    <div class="people_group-price">
+                        <p class="people_group-text">Infant (0-5)</p>
+                        <li>Only in combination with: Adult (18+)</li>
+                        <p class="price">Free</p>
+                    </div>
+                    <div class="increment_decrement-box">
+                        <span class="minus">-</span>
+                        <span class="num">0</span>
+                        <span class="plus">+</span>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="who_buy-tickets none">
+            <p class="who_buy-ticket-text">Who shall we send these tickets to?</p>
+            <form action="" class="who_buy-ticket">
+                <div class="buy_ticket-input-box">
+                    <label for="">Name</label>
+                    <input type="text" placeholder=" Enter your name ">
+                </div>
+                <div class="buy_ticket-input-box">
+                    <label for="">Surname</label>
+                    <input type="text" placeholder=" Enter your surname">
+                </div>
+                <div class="buy_ticket-input-box">
+                    <label for="">Telephone Number</label>
+                    <input type="number" placeholder=" Enter your telephone number">
+                </div>
+                <div class="buy_ticket-input-box">
+                    <label for="">Email Address</label>
+                    <input type="email" placeholder="Enter your email address">
+                </div>
+            </form>
+        </div>
+        <div class="select_payment-method none">
+            <form action="" class="select_payment-method">
+                <p class="select_payment-method-text">Select a payment method</p>
+                <div class="paypal_box">
+                    <input type="radio">
+                    <label for="">PayPal</label>
+                    <p class="paypal_box-text"> You will be redirected to the PayPal website after submitting your order</p>
+                    <img src="./assets/images/PayPal (1).svg" alt="" class="paypal_box-logo">
+                </div>
+                <div class="pay_credit-box">
+                    <div class="radio_input-cards">
+                        <input type="radio">
+                        <label for="">Pay with Credit Card</label>
+                        <img src="./assets/images/Visa (1).svg" alt="" class="credit_card">
+                        <img src="./assets/images/./Discover.svg" alt="" class="credit_card">
+                        <img src="./assets/images/Maestro.svg" alt="" class="credit_card">
+                        <img src="./assets/images/Mastercard.svg" alt="" class="credit_card">
+                    </div>
+                    <div class="card_details">
+                        <fieldset>
+                            <legend>Card Number</legend>
+                            <input type="number">
+                        </fieldset>
+                        <fieldset>
+                            <legend> Expiration Date</legend>
+                            <input type="number">
+                        </fieldset>
+                        <fieldset>
+                            <legend>Card Security Code</legend>
+                            <input type="password">
+                        </fieldset>
+                        <a href="" class="what_is-this">what is this?</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="ticket_overview-form">
+            <form class="ticket_overview">
+                <p class="ticket_overview-text"> Your Tickets Overview</p>
+            <div class="wine_tasting-ticket">
+                <img src="./assets/images/winetasting.svg" alt="">
+            <div class="name_time-date">
+                <p class="tour_ticket-name">Wine tasting In Tuscany</p>
+                <p class="tour_ticket-date"><img src="./assets/images/system-uicons_calendar-month.svg" alt=""> FRI, 23 DEC 2022</p>
+                <p class="tour_ticket-time"><img src="./assets/images/Group.svg" alt="">15:00</p>
+            </div>
+        </div>
+        <hr>
+        <div class="ticket_number-people-price" id="ticket_0">
+            <p class="ticket_number-people"><span class="ticket_number">0</span>Adult (18+) (€32.00)</p>
+            <p class="ticket_price" id="64">€64.00</p>
+        </div>
+        <div class="ticket_number-people-price" id="ticket_1">
+            <p class="ticket_number-people"><span class="ticket_number">0</span>Adult (18+) (€32.00)</p>
+            <p class="ticket_price" id="22">€22.00</p>
+        </div>
+        <div class="ticket_number-people-price" id="ticket_2">
+            <p class="ticket_number-people"><span class="ticket_number">0</span>Adult (18+) (€32.00)</p>
+            <p class="ticket_price" id="0">€0.00</p>
+        </div>
+        <hr>
+        <div class="total_price">
+            <p class="total_price-text">Total Price</p>
+            <p class="total_price-num">€86.00</p>
+        </div>
+        <button class="next_step">Go to the Next Step</button>
+            </form>
+        </div>
+    </main>
+    <div class="order_complete none">
+        <img src="./assets/images/akar-icons_circle-check-fill.svg" alt="" class="complete_icon">
+        <p class="order_complete-title">Your Order is complete!</p>
+        <p class="order_complete-text">You will be receiving a confirmation email with order details.</p>
+        <a href="./homePage.html"><button class="go_home-page"> Go to the Home Page</button></a>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./assets/javascript/purchase.js"></script>
+</body>
+</html>

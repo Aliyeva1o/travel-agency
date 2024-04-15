@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+  <link rel="stylesheet" href="./assets/css/footer.css">
+  <link rel="stylesheet" href="./assets/css/account.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="icon" href="./assets/images/Layer 1.svg" type="image/icon type">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <img src="./assets/images/Layer 1.svg" alt="" class="logo_image">
+        <div class="menu_part">
+            <ul>
+                <li><a href="./homePage.html">Home</a></li>
+                <li><a href="./aboutUs.html">About Us</a></li>
+                <li><a href="./tourPackages.html">Tour Packages</a></li>
+                <li><a href="./contactUs.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="language_my-account">
+            <select name="language" id="">
+                <option value="Eng" selected>Eng</option>
+                <option value="Az">Az</option>
+                <option value="Ru">Ru</option>
+            </select>
+            <div class="dropdown">
+                <img src="./assets/images/myaccountimg.svg" alt="" class="my_account-img">
+                <div class="dropdown-content">
+                  <a href="#"><img src="./assets/images/blackticket.svg" alt=""> My Tickets</a>
+                  <a href="#"><img src="./assets/images/clarity_logout-line.svg" alt=""> Logout</a>
+                </div>
+              </div>
+        </div>
+        <i class="fa-solid fa-bars"></i>
+    </header>
+    <p class="my_tickets-title">My Tickets</p>
+    <main class="main_my-tickets">
+        <div class="start_trip-img-text">
+            <img src="./assets/images/Trip-pana 1.svg" alt="" class="start_trip-img">
+            <p class="start_trip-text">You don't have any tickets yet. Start planning your next trip! </p>
+        </div>
+        <table class="tour_table none">
+            <tr>
+                <th>Tour Name</th>
+                <th>Payment Method</th>
+                <th> Price </th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>
+                <div class="wine_tasting-ticket">
+                        <img src="./assets/images/winetasting.svg" alt="">
+                    <div class="name_time-date">
+                        <p class="tour_ticket-name">Wine tasting In Tuscany</p>
+                        <p class="tour_ticket-date"><img src="./assets/images/system-uicons_calendar-month.svg" alt=""> FRI, 23 DEC 2022</p>
+                        <p class="tour_ticket-time"><img src="./assets/images/Group.svg" alt="">15:00</p>
+                    </div>
+                </div>
+                </td>
+                <td><p class="payment_method"><img src="./assets/images/PayPal.svg" alt="">PayPal</p></td>
+                <td><p class="tour_ticket-price">€86.00</p></td>
+                <td><p class="status"><img src="./assets/images/clarity_logout-line.svg" alt="">Upcoming</p></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="wine_tasting-ticket"><img src="./assets/images/winetasting.svg" alt="">
+                        <div class="name_time-date">
+                            <p class="tour_ticket-name">Wine tasting In Tuscany</p>
+                            <p class="tour_ticket-date"><img src="./assets/images/system-uicons_calendar-month.svg" alt=""> FRI, 23 DEC 2022</p>
+                            <p class="tour_ticket-time"><img src="./assets/images/Group.svg" alt="">15:00</p>
+                        </div></div>
+                </td>
+                <td><p class="payment_method"><img src="./assets/images/Visa.svg" alt="">PayPal</p></td>
+                <td><p class="tour_ticket-price">€86.00</p></td>
+                <td><p class="status"><img src="./assets/images/material-symbols_event-upcoming-outline.svg" alt="">Ended</p></td>
+            </tr>
+        </table>
+    </main>
+    <section class="home_page-slider">
+        <div class="homepage_slider-first-part">
+         <p>Explore Our Popular Destinantions</p>
+         <!-- <div class="slider_icons">
+             <img src="./assets/images/icon_ left arrow.svg" alt="" class="left_arrow">
+             <img src="./assets/images/icon_ right arrow.svg" alt="" class="right_arrow">
+         </div> -->
+        </div>
+        <div class="homepage_slider-second-part">
+            <!-- <div class="slider_tour-package">
+                <img src="./assets/images/Rectangle 16 (1).svg" alt="" class="tour_package-img">
+            <p class="tour_package-name">Wine tasting In Tuscany</p>
+            <p class="tour_package-price">from <span> 34 €</span></p>
+            <div class="tour_package-date-person">
+                <p class="tour_package-date"><img src="/assets/images/Layer 1223 (2).svg" alt=""> MONDAY</p>
+                <p class="tour_package-person"><img src="./assets/images/Layer 12(1).svg" alt="">10-30 PP</p>
+            </div>
+            <p class="tour_package-information">The real magic is here where you can enjoy the best Tuscan wine and eat ...</p>
+            <p class="read_more">Read More <img src="./assets/images/Layer 122 (3).svg" alt=""></p>
+            </div>
+            <div class="slider_tour-package">
+                <img src="./assets/images/Rectangle 16 (2).svg" alt="" class="tour_package-img">
+            <p class="tour_package-name">Cinque Terre Tour</p>
+            <p class="tour_package-price">from <span> 34 €</span></p>
+            <div class="tour_package-date-person">
+                <p class="tour_package-date"><img src="/assets/images/Layer 1223 (2).svg" alt=""> TO BE DECIDED</p>
+                <p class="tour_package-person"><img src="./assets/images/Layer 12(1).svg" alt="">1-50 PP</p>
+            </div>
+            <p class="tour_package-information">Visiting the 5 Terre is a must, and you can never go there enough ... </p>
+            <p class="read_more">Read More <img src="./assets/images/Layer 122 (3).svg" alt=""></p>
+            </div>
+            <div class="slider_tour-package">
+                <img src="./assets/images/Rectangle 16 (3).svg" alt="" class="tour_package-img">
+            <p class="tour_package-name">Siena and Surroundings</p>
+            <p class="tour_package-price">from <span> 34 €</span></p>
+            <div class="tour_package-date-person">
+                <p class="tour_package-date"><img src="/assets/images/Layer 1223 (2).svg" alt=""> TO BE DECIDED</p>
+                <p class="tour_package-person"><img src="./assets/images/Layer 12(1).svg" alt="">5-10 PP</p>
+            </div>
+            <p class="tour_package-information">Visit the beautiful Siena and the cities that surround it to experience ...</p>
+            <p class="read_more">Read More <img src="./assets/images/Layer 122 (3).svg" alt=""></p>
+            </div>
+            <div class="slider_tour-package">
+                <img src="./assets/images/Rectangle 16.svg" alt="" class="tour_package-img">
+            <p class="tour_package-name">Lucca Bike Tour</p>
+            <p class="tour_package-price">from <span> 34 €</span></p>
+            <div class="tour_package-date-person">
+                <p class="tour_package-date"><img src="/assets/images/Layer 1223 (2).svg" alt=""> EVERY DAY</p>
+                <p class="tour_package-person"><img src="./assets/images/Layer 12(1).svg" alt="">3-10 PP</p>
+            </div>
+            <p class="tour_package-information">A tour of the city and its surroundings led by a professional ...</p>
+            <p class="read_more">Read More <img src="./assets/images/Layer 122 (3).svg" alt=""></p>
+            </div>
+            <div class="slider_tour-package">
+                <img src="./assets/images/Rectangle 16.svg" alt="" class="tour_package-img">
+            <p class="tour_package-name">Lucca Bike Tour</p>
+            <p class="tour_package-price">from <span> 34 €</span></p>
+            <div class="tour_package-date-person">
+                <p class="tour_package-date"><img src="/assets/images/Layer 1223 (2).svg" alt=""> EVERY DAY</p>
+                <p class="tour_package-person"><img src="./assets/images/Layer 12(1).svg" alt="">3-10 PP</p>
+            </div>
+            <p class="tour_package-information">A tour of the city and its surroundings led by a professional ...</p>
+            <p class="read_more">Read More <img src="./assets/images/Layer 122 (3).svg" alt=""></p>
+            </div>
+            <div class="slider_tour-package">
+                <img src="./assets/images/Rectangle 16.svg" alt="" class="tour_package-img">
+            <p class="tour_package-name">Lucca Bike Tour</p>
+            <p class="tour_package-price">from <span> 34 €</span></p>
+            <div class="tour_package-date-person">
+                <p class="tour_package-date"><img src="/assets/images/Layer 1223 (2).svg" alt=""> EVERY DAY</p>
+                <p class="tour_package-person"><img src="./assets/images/Layer 12(1).svg" alt="">3-10 PP</p>
+            </div>
+            <p class="tour_package-information">A tour of the city and its surroundings led by a professional ...</p>
+            <p class="read_more">Read More <img src="./assets/images/Layer 122 (3).svg" alt=""></p>
+            </div>
+            <div class="slider_tour-package">
+                <img src="./assets/images/Rectangle 16.svg" alt="" class="tour_package-img">
+            <p class="tour_package-name">Lucca Bike Tour</p>
+            <p class="tour_package-price">from <span> 34 €</span></p>
+            <div class="tour_package-date-person">
+                <p class="tour_package-date"><img src="/assets/images/Layer 1223 (2).svg" alt=""> EVERY DAY</p>
+                <p class="tour_package-person"><img src="./assets/images/Layer 12(1).svg" alt="">3-10 PP</p>
+            </div>
+            <p class="tour_package-information">A tour of the city and its surroundings led by a professional ...</p>
+            <p class="read_more">Read More <img src="./assets/images/Layer 122 (3).svg" alt=""></p>
+            </div>
+            <div class="slider_tour-package">
+                <img src="./assets/images/Rectangle 16.svg" alt="" class="tour_package-img">
+            <p class="tour_package-name">Lucca Bike Tour</p>
+            <p class="tour_package-price">from <span> 34 €</span></p>
+            <div class="tour_package-date-person">
+                <p class="tour_package-date"><img src="/assets/images/Layer 1223 (2).svg" alt=""> EVERY DAY</p>
+                <p class="tour_package-person"><img src="./assets/images/Layer 12(1).svg" alt="">3-10 PP</p>
+            </div>
+            <p class="tour_package-information">A tour of the city and its surroundings led by a professional ...</p>
+            <p class="read_more">Read More <img src="./assets/images/Layer 122 (3).svg" alt=""></p>
+            </div> -->
+        </div>
+        
+       </section>
+
+       <footer class="footer">
+        <img src="./assets/images/Layer 1.svg" alt="" class="footer_logo">
+        <div class="footer_information">
+            <div class="services footer_detail">
+                <p>Services</p>
+                <ul>
+                    <li><a href="">Bike and Rickshaw rental</a></li>
+                    <li><a href="">Guided Tours of Lucca</a></li>
+                    <li><a href="">Guided Bike Tour of Lucca</a></li>
+                    <li><a href="">Trip In The Tuscan Hills</a></li>
+                    <li><a href="">Transportation With Luxury Cars</a></li>
+                    <li><a href="">Wine Tours By Bus With Guide</a></li>
+                </ul>
+            </div>
+            <div class="Home footer_detail">
+                <p>Home</p>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Tour Packages</a></li>
+                </ul>
+            </div>
+            <div class="Help footer_detail">
+                <p>Help</p>
+                <ul>
+                    <li><a href="">Terms of Use</a></li>
+                    <li><a href="">Provicy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="contacts footer_detail">
+                <p>Contacts</p>
+                <ul>
+                    <li><a href=""><img src="./assets/images/Vector (4).svg" alt="">Piazza Napoleone, Lucca, Tuscany</a></li>
+                    <li><a href=""><img src="./assets/images/Vector (2).svg" alt="">+39 346 368 5708</a></li>
+                    <li><a href=""><img src="./assets/images/Vector (3).svg" alt="">italiainlimo@gmail.com</a></li>
+                </ul>
+            </div>
+            <div class="footer_detail">
+                <p>Social Media</p>
+                <div class="media_logos">
+                    <img src="./assets/images/Vector (5).svg" alt="">
+                    <img src="./assets/images/Vector (6).svg" alt="">
+                    <img src="./assets/images/Subtract.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <p class="footer_text">Copyright © 2022. All rights reserved.</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./assets/javascript/slider.js"></script>
+    <script src="./assets/javascript/main.js"></script>
+</body>
+</html>
